@@ -243,6 +243,7 @@ body {
   padding: var(--Spacingml) var(--Spacingl);
   gap: 10px;
   border-radius: 2px;
+  border: none;
   background-color: var(--Primary-Primary1000);
   color: var(--Base-Base_White);
   font-size: 18px;
@@ -464,7 +465,7 @@ span.size {
 .email-bar button {
   width: 39px;
   height: 45px;
-  padding: 17px 0px 15.27px 0px;
+  padding: 12px 0px 15px 0px;
   border-radius: var(--Spacingxxs);
   background-color: #172039;
   border: 2px solid #172039;
