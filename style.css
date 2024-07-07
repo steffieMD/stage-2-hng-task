@@ -199,8 +199,11 @@ body {
 }
 
 .listProduct .item img {
-  filter: drop-shadow(0 50px 20px #0009);
   width: 70%;
+}
+
+.listProduct img:hover {
+  filter: drop-shadow(0 50px 20px #0009);
 }
 
 .item-title {
