@@ -3,18 +3,54 @@
     "id": 1,
     "name": "Classic All-Terrain Clog",
     "price": 39.99,
-    "image": "media/svg/image-1.svg"
+    "image": "media/png/image-1.png"
   },
   {
     "id": 2,
-    "name": "Classic All-Terrain Clog",
-    "price": 39.99,
-    "image": "media/svg/image-1.svg"
+    "name": "Woven Leather Sandals",
+    "price": 25.99,
+    "image": "media/png/image-2.png"
   },
   {
     "id": 3,
-    "name": "Classic All-Terrain Clog",
+    "name": "Multipiece Chunky Sneakers",
     "price": 39.99,
-    "image": "media/svg/image-1.svg"
+    "image": "media/png/image-3.png"
+  },
+  {
+    "id": 4,
+    "name": "Chunky Suede Boots",
+    "price": 19.99,
+    "image": "media/png/image-4.png"
+  },
+  {
+    "id": 5,
+    "name": "Retro High-top Sneakers",
+    "price": 25.99,
+    "image": "media/png/image-5.png"
+  },
+  {
+    "id": 6,
+    "name": "Split Leather Sneakers",
+    "price": 35.99,
+    "image": "media/png/image-6.png"
+  },
+  {
+    "id": 7,
+    "name": "Contrast Chunky SHoes",
+    "price": 35.99,
+    "image": "media/png/image-7.png"
+  },
+  {
+    "id": 8,
+    "name": "Leather Clogs",
+    "price": 45.99,
+    "image": "media/png/image-8.png"
+  },
+  {
+    "id": 9,
+    "name": "Quilted Slider Sandals",
+    "price": 29.99,
+    "image": "media/png/image-9.png"
   }
 ]

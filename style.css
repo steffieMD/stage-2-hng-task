@@ -8,7 +8,10 @@
   --Spacingl: 28px;
   --Base-Base_Black: #0a0a0b;
   --Neutrals-Neutrals600: #726c6c;
+  --Base-Base_White: #fafafa;
+  --Primary_Primary100: #e1e5f3;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -145,7 +148,6 @@ body {
 }
 
 .sort-btn {
-  font-family: Poppins;
   font-size: 18px;
   font-weight: 600;
   line-height: 21.6px;
@@ -153,11 +155,109 @@ body {
 }
 
 .show-sorted {
-  font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
   line-height: 19.2px;
   color: var(--Neutrals-Neutrals600);
   margin-top: 20px;
+}
+
+.productListSection {
+  margin-top: 50px;
+}
+.productListSection .listProduct {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+}
+
+.listProduct .item {
+  width: 360px;
+  height: 410px;
+  /* border: 1px solid red; */
+  box-shadow: 0 8px 15px 7px rgba(0, 0, 0, 0.1);
+  border-radius: var(--Spacings);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.listProduct .item .img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listProduct .item img {
+  filter: drop-shadow(0 50px 20px #0009);
+  width: 70%;
+}
+
+.item-title {
+  display: grid;
+  grid-template-columns: 0.8fr 0.3fr;
+}
+
+.item-name-rating h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+  gap: 20px;
+}
+
+.like-item {
+  background-color: var(--Primary_Primary100);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.price-size-cart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.addCart {
+  width: 161px;
+  height: 62px;
+  padding: var(--Spacingml) var(--Spacingl);
+  gap: 10px;
+  border-radius: 2px;
+  background-color: var(--Primary-Primary1000);
+  color: var(--Base-Base_White);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+}
+
+span.size {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: left;
+  color: var(--Base-Base_Black);
+}
+
+.size-btn {
+  width: 85px;
+  height: 34px;
+  margin-left: 10px;
+  padding: 6px 10px 6px 10px;
+  border-radius: 3px;
+  border: 0.5px solid var(--Base-Base_Black);
+  background-color: transparent;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: left;
+  margin-top: 15px;
 }
 /* border: 2px solid red; */
