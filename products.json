@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Classic All-Terrain Clog",
+    "price": 39.99,
+    "image": "media/svg/image-1.svg"
+  },
+  {
+    "id": 2,
+    "name": "Classic All-Terrain Clog",
+    "price": 39.99,
+    "image": "media/svg/image-1.svg"
+  },
+  {
+    "id": 3,
+    "name": "Classic All-Terrain Clog",
+    "price": 39.99,
+    "image": "media/svg/image-1.svg"
+  }
+]
