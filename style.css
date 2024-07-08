@@ -337,7 +337,7 @@ span.size {
 }
 
 .main-footer {
-  padding: 60px 60px 30px 60px;
+  padding: 60px 60px 15px 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -363,7 +363,7 @@ span.size {
 .payment {
   margin-top: 30px;
   width: 35%;
-  margin: 30px auto 15px auto;
+  margin: 30px auto 0 auto;
 }
 .payment .title {
   display: flex;
@@ -614,7 +614,7 @@ span.size {
   }
 
   .main-footer {
-    padding: 60px 30px 30px 30px;
+    padding: 60px 30px 15px 30px;
   }
 
   .footer-links-div div a {

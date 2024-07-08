@@ -8,18 +8,18 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/checkout-page/style.css" />
     <title>APPAREL SHOPPING APP</title>
   </head>
   <body>
     <header class="header">
-      <div class="logo"><img src="media/svg/logo.svg" alt="shop logo" /></div>
+      <div class="logo"><img src="/media/svg/logo.svg" alt="shop logo" /></div>
       <div class="links">
         <div>
           <a>New In</a>
         </div>
         <div class="active">
-          <a>Men</a>
+          <a class="men">Men</a>
         </div>
         <div>
           <a>Women</a>
@@ -38,18 +38,147 @@
         <div class="search-bar">
           <input type="text" name="" class="search-input" id="" />
           <button class="search-btn">
-            <img src="media/svg/search-icon.svg" alt="search icon" />
+            <img src="/media/svg/search-icon.svg" alt="search icon" />
           </button>
         </div>
         <div class="other-links">
-          <span><img src="media/svg/cart-icon.svg" alt="cart icon" /></span>
-          <span><img src="media/svg/like-icon.svg" alt="like icon" /></span>
+          <span><img src="/media/svg/cart-icon.svg" alt="cart icon" /></span>
+          <span><img src="/media/svg/like-icon.svg" alt="like icon" /></span>
           <span
-            ><img src="media/svg/profile-icon.svg" alt="profile icon"
+            ><img src="/media/svg/profile-icon.svg" alt="profile icon"
           /></span>
         </div>
       </div>
     </header>
-    <script src="/product-list_page/app.js"></script>
+    <div class="container">
+      <h1>Shopping Bag</h1>
+      <div class="cart-summary">
+        <div class="cart">
+          <div class="cart-items">
+            <div class="item">
+              <div class="item-image">
+                <img src="/media/png/image-1.png" alt="clogs" />
+              </div>
+              <div class="item-info">
+                <span>Classic All-Terrain Clog</span>
+                <span>Colour: Black</span>
+                <span>Size: US 13</span>
+                <span>Edit</span>
+              </div>
+              <div class="price-quantity">
+                <span class="price">$39.99</span>
+                <div class="edit-cart">
+                  <div class="change-quantity">
+                    <span class="minus">-</span>
+                    <span class="quantity">1</span>
+                    <span class="plus">+</span>
+                  </div>
+                  <span class="delete">Delete</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="summary"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="main-footer">
+        <div class="footer-info">
+          <div class="footer-links-div">
+            <div>
+              <a href="#" class="active">Need Help? </a>
+              <a href="#">FAQs</a>
+              <a href="#">Summer Sales</a>
+              <a href="#">Track Order</a>
+              <a href="#">Returns & Exchanges</a>
+              <a href="#">Find Our Stores & Pickup Locations</a>
+            </div>
+            <div>
+              <a href="#" class="active">Information </a>
+              <a href="#">Delivery</a>
+              <a href="#">Refer a Friend</a>
+              <a href="#">Student Discount</a>
+              <a href="#">Join our Affiliate Program</a>
+            </div>
+            <div>
+              <a href="#" class="active">About Us</a>
+              <a href="#">Our Story</a>
+              <a href="#">Careers</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Join our Affiliate Program</a>
+            </div>
+          </div>
+          <div class="sign-up">
+            <span class="sign-up-text">Sign up for Discounts & Updates</span>
+            <div class="email-bar">
+              <input type="email" name="" id="" placeholder="Email Address" />
+              <button>&gt;</button>
+            </div>
+            <div class="download-text">
+              DOWNLOAD AND SHOP FASTER WITH THE APP
+            </div>
+            <div class="store-btn">
+              <div class="google-btn store">
+                <span class="icon"
+                  ><img
+                    src="/media/svg/google-shop.svg"
+                    alt="google store icon"
+                /></span>
+                <div>
+                  <span class="small-text">GET IT ON</span>
+                  <span class="big-text">Google Play</span>
+                </div>
+              </div>
+
+              <div class="apple-btn store">
+                <span class="icon"
+                  ><img src="/media/svg/apple-logo.svg" alt="apple logo"
+                /></span>
+                <div>
+                  <span class="small-text">Download on the</span>
+                  <span class="big-text">App Store</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="payment">
+          <div class="title">
+            <div class="horizontal-line"></div>
+            <span>Secure Payment</span>
+            <div class="horizontal-line"></div>
+          </div>
+          <div class="payment-options">
+            <div class="payment-icons">
+              <img src="/media/svg/MasterCard.svg" alt="" />
+            </div>
+            <div class="payment-icons">
+              <img src="/media/svg/Visa.svg" alt="" />
+            </div>
+            <div class="payment-icons">
+              <img src="/media/svg/American Express.svg" alt="" />
+            </div>
+            <div class="payment-icons">
+              <img src="/media/svg/ApplePay.svg" alt="" />
+            </div>
+            <div class="payment-icons">
+              <img src="/media/svg/Google Pay.svg" alt="" />
+            </div>
+            <div class="payment-icons">
+              <img src="/media/svg/Payoneer.svg" alt="" />
+            </div>
+            <div class="payment-icons">
+              <img src="/media/svg/PayPal.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="policy">
+        <span>Privacy policy</span>
+        <span>Refund policy</span>
+      </div>
+    </footer>
+    <script src="/checkout-page/app.js"></script>
   </body>
 </html>

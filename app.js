@@ -5,14 +5,12 @@ const listProduct = document.querySelector(".listProduct");
 
 let productList = [];
 
-listProduct.addEventListener("click", () => alert("hi!"));
-
 const addProductListtoHTML = function () {
   listProduct.innerHTML = "";
 
   if (productList.length > 0) {
     productList.forEach((item) => {
-      const html = `<div class="item">
+      const html = `<div class="item" data-id="${item.id}">
             <div class="item-title">
               <div class="item-name-rating">
                 <h2>${item.name}</h2>
@@ -41,12 +39,49 @@ const addProductListtoHTML = function () {
   }
 };
 
+const addToCart = function (product_id) {
+  let carts = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const findProduct = carts.find((val) => val.product_id == product_id);
+
+  if (findProduct) {
+    findProduct.quantity += 1;
+  } else {
+    carts.push({
+      product_id: product_id,
+      quantity: 1,
+    });
+  }
+
+  storeCart(carts);
+};
+
+const storeCart = function (carts) {
+  localStorage.setItem("cart", JSON.stringify(carts));
+};
+
+const addCartToHTML = function (carts) {};
+
 const initApp = function () {
   fetch("/products.json")
     .then((response) => response.json())
     .then((data) => {
       productList = data;
       addProductListtoHTML();
+
+      if (localStorage.getItem("cart")) {
+        const carts = JSON.parse(localStorage.getItem("cart"));
+        addCartToHTML(carts);
+      }
     });
 };
 initApp();
+
+// Event Listeners
+listProduct.addEventListener("click", function (e) {
+  if (!e.target.classList.contains("addCart")) return null;
+  const product_id = e.target.closest(".item").dataset.id;
+  addToCart(product_id);
+
+  window.location = "checkout-page/checkout.html";
+});
