@@ -338,7 +338,7 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 100px;
-  padding-bottom: 80px;
+  padding-bottom: 15px;
 }
 
 .listProduct .item {
@@ -624,6 +624,21 @@ span.size {
   font-size: medium;
   font-weight: 600;
   color: var(--Base-Base_White);
+}
+
+.chatbot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--Secondary-Secondary);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: var(--Base-Base_White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 30px auto;
 }
 
 /* MEDIA QUERIES */
