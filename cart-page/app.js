@@ -1,26 +1,45 @@
 // Elements
 const btnMen = document.querySelector(".men");
 const checkOutList = document.querySelector(".cart-items");
-const container = document.querySelector(".container");
+const cart = document.querySelector(".cart");
+const listProduct = document.querySelector(".listProduct");
 
-let totalQuantity = 0;
 let totalBill = 0;
 let listProducts = [];
+
+// Functions
+const addToCart = function (product_id) {
+  let carts = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const findProduct = carts.find((val) => val.product_id == product_id);
+  if (findProduct) {
+    findProduct.quantity += 1;
+  } else {
+    carts.push({
+      product_id: product_id,
+      quantity: 1,
+    });
+  }
+
+  // 7.5
+  addCartToHTML(carts);
+  // 8.5
+  storeCart(carts);
+};
+
+const storeCart = function (carts) {
+  localStorage.setItem("cart", JSON.stringify(carts));
+};
 
 const addCartToHTML = function (carts) {
   checkOutList.innerHTML = "";
   if (carts.length > 0) {
     carts.forEach((cart) => {
-      let carts = JSON.parse(localStorage.getItem("cart")) || [];
-      // totalQuantity += cart.quantity;
-
       let productPosition = listProducts.findIndex(
         (value) => value.id == cart.product_id
       );
-      totalBill += listProducts[productPosition].price * cart.quantity;
       checkOutList.insertAdjacentHTML(
         "beforebegin",
-
         `<div class="item" data-id="${cart.product_id}">
               <div class="item-image">
                 <img src="/${
@@ -54,28 +73,26 @@ const addCartToHTML = function (carts) {
 
 const changeQuantity = function (product_id, type) {
   const carts = JSON.parse(localStorage.getItem("cart"));
-  let itemInCart = carts.find((val) => val.product_id == product_id);
+  let positionInCart = carts.findIndex((val) => val.product_id == product_id);
 
-  if (itemInCart) {
+  if (positionInCart >= 0) {
     switch (type) {
       case "plus":
-        itemInCart.quantity += 1;
+        carts[positionInCart].quantity += 1;
         break;
 
       default:
-        // get value if minus
-        let valueChange = itemInCart.quantity - 1;
+        let valueChange = carts[positionInCart].quantity - 1;
         if (valueChange > 0) {
-          itemInCart.quantity = valueChange;
+          carts[positionInCart].quantity = valueChange;
         } else {
-          carts.splice(itemInCart, 1);
+          carts.splice(positionInCart, 1);
         }
         break;
     }
   }
-  addCartToMemory(carts);
-  // so that it updates
   addCartToHTML(carts);
+  storeCart(carts);
 };
 
 const initApp = function () {
@@ -93,21 +110,21 @@ const initApp = function () {
 initApp();
 
 // Event Listeners
-container.addEventListener("click", function (e) {
-  console.log(e.target);
-  if (
-    !e.target.classList.contains("minus") ||
-    !e.target.classList.contains("plus")
-  )
-    return null;
+cart.addEventListener("click", function (e) {
+  const clicked = e.target;
 
-  const product_id = e.target.closest(".item").dataset.id;
-  let type = "minus";
-  if (clicked.classList.contains("plus")) {
-    type = "plus";
+  if (
+    clicked.classList.contains("minus") ||
+    clicked.classList.contains("plus")
+  ) {
+    const product_id = e.target.closest(".item").dataset.id;
+    let type = "minus";
+    if (clicked.classList.contains("plus")) {
+      type = "plus";
+    }
+    // 10.5
+    changeQuantity(product_id, type);
   }
-  changeQuantity(product_id, type);
-  console.log(product_id);
 });
 
 btnMen.addEventListener("click", function () {
