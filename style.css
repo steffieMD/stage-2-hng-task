@@ -24,6 +24,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+}
+
 .header {
   display: grid;
   grid-template-columns: 0.8fr 1.5fr 1fr;
@@ -143,7 +147,6 @@ body {
   gap: 10px;
   border-radius: var(--Spacingxxs);
   border: 1px solid var(--Primary-Primary1000);
-  opacity: 0px;
   cursor: pointer;
 }
 
@@ -517,8 +520,132 @@ span.size {
   color: var(--Base-Base_White);
 }
 
+/* MEDIA QUERIES */
 @media screen and (min-width: 2400px) {
   .productListSection .listProduct {
     grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .productListSection .listProduct {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .container {
+    padding: 20px 30px 0 30px;
+  }
+
+  .listProduct .item {
+    width: 339px;
+    height: 400px;
+  }
+
+  .shoe-options-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .header .logo {
+    margin: 15px 0 15px 24px;
+  }
+  .header .logo img {
+    width: 80px;
+  }
+
+  .links {
+    gap: 0;
+    padding-right: 10px;
+  }
+
+  .links a {
+    font-size: 10px;
+    white-space: nowrap;
+    gap: 0;
+    padding: 0px 10px 0px 10px;
+  }
+
+  .search-input {
+    width: 123px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: 0;
+  }
+
+  .search-btn {
+    height: 45px;
+    border: 2px solid #f3f3e1;
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    /* padding: 10px; */
+  }
+
+  .rest-nav {
+    gap: 15px;
+  }
+
+  .other-links {
+    margin-right: 10px;
+    gap: 18px;
+  }
+
+  .other-links img {
+    width: 20px;
+  }
+
+  .size-div {
+    display: flex;
+    align-items: center;
+  }
+
+  .size-div .size {
+    font-size: 12px;
+  }
+
+  .size-btn {
+    width: 70px;
+  }
+
+  .page-direction {
+    width: 55%;
+  }
+
+  .main-footer {
+    padding: 60px 30px 30px 30px;
+  }
+
+  .footer-links-div div a {
+    font-size: 12px;
+  }
+
+  .shoe-options {
+    text-align: center;
+  }
+
+  .sign-up {
+    margin-left: 20px;
+  }
+
+  .sign-up-text {
+    font-size: 15px;
+  }
+
+  .email-bar input {
+    width: 280px;
+  }
+
+  .download-text {
+    font-size: 20px;
+  }
+
+  .payment-icons img {
+    width: 30px;
+    height: 18px;
+  }
+  .policy span {
+    font-size: 10px;
   }
 }
