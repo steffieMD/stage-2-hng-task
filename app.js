@@ -84,7 +84,7 @@ listProduct.addEventListener("click", function (e) {
   const product_id = e.target.closest(".item").dataset.id;
   addToCart(product_id);
 
-  window.location = "/cart-page/cart.html";
+  //   window.location = "/cart-page/cart.html";
 });
 
 cartIcon.addEventListener("click", function () {

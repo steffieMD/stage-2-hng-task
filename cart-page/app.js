@@ -3,6 +3,7 @@ const btnMen = document.querySelector(".men");
 const checkOutList = document.querySelector(".cart-items");
 const cart = document.querySelector(".cart");
 const listProduct = document.querySelector(".listProduct");
+const btnCheckOut = document.querySelector(".checkout-btn");
 
 let totalBill = 0;
 let listProducts = [];
@@ -129,4 +130,8 @@ cart.addEventListener("click", function (e) {
 
 btnMen.addEventListener("click", function () {
   window.location = "/index.html";
+});
+
+btnCheckOut.addEventListener("click", function () {
+  window.location = "/checkout-page/checkout.html";
 });
