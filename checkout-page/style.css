@@ -346,6 +346,10 @@ h2 {
   padding: 0px 16px 0px 16px;
 }
 
+.shipping-div div:nth-child(1) {
+  border-bottom: none;
+}
+
 .shipping-div span {
   font-size: 16px;
   font-weight: 400;
