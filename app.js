@@ -2,6 +2,7 @@
 
 // Elements
 const listProduct = document.querySelector(".listProduct");
+const cartIcon = document.querySelector(".cart-icon");
 
 let productList = [];
 
@@ -84,4 +85,8 @@ listProduct.addEventListener("click", function (e) {
   addToCart(product_id);
 
   window.location = "checkout-page/checkout.html";
+});
+
+cartIcon.addEventListener("click", function () {
+  window.location = "/cart-page/cart.html";
 });
