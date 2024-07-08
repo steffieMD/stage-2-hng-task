@@ -541,6 +541,7 @@ span.size {
   .listProduct .item {
     width: 339px;
     height: 400px;
+    margin: 0 auto;
   }
 
   .shoe-options-div {
