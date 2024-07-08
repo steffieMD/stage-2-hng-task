@@ -330,6 +330,17 @@ h1 {
   letter-spacing: -0.03em;
   color: var(--Base-Base_White);
   white-space: nowrap;
+  cursor: pointer;
+}
+
+.summary button:hover,
+.addCart:hover,
+.email-bar button:hover {
+  opacity: 0.8;
+}
+
+.cart-icon {
+  height: 100%;
 }
 
 .listProduct {
@@ -768,6 +779,7 @@ span.size {
   .other-links {
     margin-right: 10px;
     gap: 18px;
+    height: 100%;
   }
 
   .other-links img {

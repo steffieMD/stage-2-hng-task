@@ -61,8 +61,6 @@ const storeCart = function (carts) {
   localStorage.setItem("cart", JSON.stringify(carts));
 };
 
-const addCartToHTML = function (carts) {};
-
 const initApp = function () {
   fetch("/products.json")
     .then((response) => response.json())
@@ -72,7 +70,7 @@ const initApp = function () {
 
       if (localStorage.getItem("cart")) {
         const carts = JSON.parse(localStorage.getItem("cart"));
-        addCartToHTML(carts);
+        addProductListtoHTML(carts);
       }
     });
 };

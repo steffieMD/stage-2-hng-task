@@ -138,11 +138,6 @@ body::-webkit-scrollbar {
   gap: 40px;
 }
 
-.shipping-form {
-  padding-bottom: 40px;
-  border-bottom: 1px solid var(--Base-Base_Black);
-}
-
 h1 {
   padding-bottom: 40px;
   display: flex;
@@ -279,13 +274,29 @@ h1 span.active {
   color: var(--Neutrals-Neutrals500);
 }
 
+.payment-title {
+  border-bottom: 1px solid var(--Base-Base_Black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.payment-title span {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: -0.03em;
+  color: var(--Neutrals-Neutrals500);
+}
+
 .shipping-address-form,
 .shipping-method-div {
   padding-top: 40px;
 }
 
-.shipping-address-form h2,
-.shipping-method-div h2 {
+.shipping-address-form h2 {
   padding-bottom: 15px;
 }
 
@@ -293,6 +304,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 10px;
 }
 
 label,
@@ -300,6 +312,7 @@ label span {
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
+  white-space: nowrap;
 }
 label span {
   color: rgb(255, 0, 0);
@@ -312,12 +325,13 @@ label span {
   border-radius: var(--Spacingxxs);
   border: 0.5px solid var(--Base-Base_Black);
   margin-top: 5px;
+  padding: 10px;
 }
 
 .split-form {
   width: 68%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 .split-form input {
@@ -331,29 +345,27 @@ h2 {
   letter-spacing: -0.03em;
 }
 
-.shipping-div {
+.save-card {
+  padding: 2px 10px;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-}
-
-.shipping-div div {
-  width: 65%;
-  display: grid;
-  grid-template-columns: 15px 35px 170px 180px;
-  border: 1px solid var(--Base-Base_Black);
-  border-radius: var(--Spacingxxs);
+  grid-template-columns: 20px 1fr;
   gap: 10px;
-  padding: 0px 16px 0px 16px;
 }
 
-.shipping-div span {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  padding: 10px;
-  white-space: nowrap;
+.save-card.first-line {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.045em;
 }
 
+.save-card.second-line {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.045em;
+  color: var(--Neutrals-Neutrals500);
+}
 .chatbot {
   width: 50px;
   height: 50px;
