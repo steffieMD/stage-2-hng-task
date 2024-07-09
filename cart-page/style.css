@@ -456,7 +456,6 @@ span.size {
   padding: 6px 10px 6px 10px;
   border-radius: 3px;
   border: 1px solid var(--Base-Base_Black);
-  border-bottom: 1px;
   background-color: transparent;
   color: var(--Base-Base_Black);
 }
