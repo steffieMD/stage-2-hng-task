@@ -164,6 +164,11 @@ h1 {
   justify-content: space-between;
 }
 
+.cart-items {
+  width: 850px;
+  margin-bottom: 50px;
+}
+
 .cart .for-you {
   font-size: 18px;
   font-weight: 600;
@@ -189,7 +194,7 @@ h1 {
 
 .cart .item {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr 0.5fr;
   width: 850px;
   gap: 15px;
   padding: 20px;
@@ -762,7 +767,7 @@ span.size {
     height: 70.89px;
   }
 
-  .item-info-div {
+  .cart .cart-items .item-info-div {
     width: 197px;
     height: 132px;
     gap: 22px;

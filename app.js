@@ -4,7 +4,7 @@
 const listProduct = document.querySelector(".listProduct");
 const cartIcon = document.querySelector(".cart-icon");
 const homePage = document.querySelector(".homePage");
-console.log(homePage);
+const headerEl = document.querySelector(".header");
 
 let productList = [];
 
@@ -158,4 +158,8 @@ cartIcon.addEventListener("click", function () {
 
 homePage.addEventListener("click", function () {
   window.location = "/index.html";
+});
+
+headerEl.addEventListener("mouseover", function name(e) {
+  console.log(e.target);
 });

@@ -42,33 +42,47 @@ const addCartToHTML = function (carts) {
         (value) => value.id == cart.product_id
       );
       checkOutList.insertAdjacentHTML(
-        "beforebegin",
-        `<div class="item" data-id="${cart.product_id}">
-              <div class="item-image">
-                <img src="/${
-                  listProducts[productPosition].image
-                }" alt="item in cart" />
-              </div>
-              <div class="item-info">
-                <span>${listProducts[productPosition].name}</span>
-                <span>Colour: Black</span>
-                <span>Size: US 13</span>
-                <span>Edit</span>
-              </div>
-              <div class="price-quantity">
-                <span class="price">$${(
-                  listProducts[productPosition].price * cart.quantity
-                ).toFixed(2)}</span>
-                <div class="edit-cart">
-                  <div class="change-quantity">
-                    <span class="minus">-</span>
-                    <span class="quantity">${cart.quantity}</span>
-                    <span class="plus">+</span>
-                  </div>
-                  <span class="delete">Delete</span>
+        "afterbegin",
+        ` <div class="item">
+                <div class="item-image">
+                  <img src="/${
+                    listProducts[productPosition].image
+                  }" alt="clogs" />
                 </div>
-              </div>
-            </div>`
+                <div class="item-info-div">
+                  <div class="item-info">
+                    <span class="name"
+                      >${
+                        listProducts[productPosition].name
+                      }                            
+                    </span>
+                    <div></div>
+
+                    <div class="span-context">
+                      <span>Colour:</span>
+                      <span>Black</span>
+                    </div>
+                    <div class="span-context">
+                      <span>Size:</span>
+                      <span>US 13</span>
+                    </div>
+                    <span class="edit">Edit</span>
+                  </div>
+                  <div class="price-quantity">
+                    <span class="price">$${(
+                      listProducts[productPosition].price * cart.quantity
+                    ).toFixed(2)}</span>
+                    <div class="edit-cart">
+                      <div class="change-quantity">
+                        <span class="minus">-</span>
+                        <span class="quantity">${cart.quantity}</span>
+                        <span class="plus">+</span>
+                      </div>
+                      <span class="delete">Delete</span>
+                    </div>
+                  </div>
+                </div>
+              </div>`
       );
     });
   }
