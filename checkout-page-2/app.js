@@ -3,7 +3,7 @@ const btnCheckOut = document.querySelector(".checkout-btn");
 const btnMen = document.querySelector(".men");
 const shippingHeader = document.querySelector(".shipping-header");
 const homePage = document.querySelector(".homePage");
-console.log(homePage);
+const confirmationBtn = document.querySelector(".confirmation-header");
 
 btnMen.addEventListener("click", function () {
   window.location = "/index.html";
@@ -14,8 +14,7 @@ cartIcon.addEventListener("click", function () {
 });
 
 btnCheckOut.addEventListener("click", function () {
-  // window.location = "checkout-page-2/checkout.html";
-  alert("STILL COOKING ;)");
+  window.location = "/checkout-page-3/checkout.html";
 });
 
 shippingHeader.addEventListener("click", function () {
@@ -24,4 +23,8 @@ shippingHeader.addEventListener("click", function () {
 
 homePage.addEventListener("click", function () {
   window.location = "/index.html";
+});
+
+confirmationBtn.addEventListener("click", function () {
+  window.location = "/checkout-page-3/checkout.html";
 });

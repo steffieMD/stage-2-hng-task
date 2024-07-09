@@ -4,6 +4,7 @@ const btnMen = document.querySelector(".men");
 const paymentHeader = document.querySelector(".payment-header");
 const homePage = document.querySelector(".homePage");
 console.log(homePage);
+const confirmationBtn = document.querySelector(".confirmation-header");
 
 btnMen.addEventListener("click", function () {
   window.location = "/index.html";
@@ -23,4 +24,8 @@ paymentHeader.addEventListener("click", function () {
 
 homePage.addEventListener("click", function () {
   window.location = "/index.html";
+});
+
+confirmationBtn.addEventListener("click", function () {
+  window.location = "/checkout-page-3/checkout.html";
 });

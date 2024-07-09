@@ -397,9 +397,6 @@ h2 {
   display: flex;
   flex-direction: column;
   background-color: var(--Primary-Primary900);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
 .policy-footer {
