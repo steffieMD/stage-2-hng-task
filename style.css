@@ -120,6 +120,10 @@ body::-webkit-scrollbar {
   margin-right: 30px;
 }
 
+.other-links .search-icon {
+  display: none;
+}
+
 .other-links span {
   display: flex;
   align-items: center;
@@ -583,6 +587,16 @@ span.size {
 
   .other-links {
     margin-right: 24px;
+    gap: 25px;
+  }
+
+  .other-links .search-icon {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .homePage {
+    width: 84.5px;
   }
 
   .container {
