@@ -40,9 +40,16 @@ body::-webkit-scrollbar {
   grid-template-columns: 0.8fr 1.5fr 1fr;
   background-color: #172039;
 }
+.header .links div:hover {
+  background-color: #243158;
+}
+.other-links span:hover {
+  background-color: #243158;
+}
 
 .header .logo {
   margin: 24px 0 24px 64px;
+  cursor: pointer;
 }
 
 .header .logo {
@@ -70,6 +77,7 @@ body::-webkit-scrollbar {
   line-height: 21.6px;
   padding: 0px 20px 0px 20px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .links a.sale {
@@ -127,7 +135,7 @@ body::-webkit-scrollbar {
 
 .other-links {
   display: flex;
-  gap: 30px;
+  gap: 10px;
   margin-right: 30px;
 }
 
@@ -138,6 +146,8 @@ body::-webkit-scrollbar {
 .other-links span {
   display: flex;
   align-items: center;
+  padding: 15px;
+  height: 100%;
 }
 
 /* Container */

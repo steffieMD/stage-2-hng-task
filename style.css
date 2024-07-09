@@ -12,6 +12,7 @@
   --Neutrals-Neutrals600: #726c6c;
   --Base-Base_White: #fafafa;
   --Base-Base_Black: #0a0a0b;
+  --Spacingsm: 10px;
 }
 
 * {
@@ -33,6 +34,11 @@ body::-webkit-scrollbar {
   display: grid;
   grid-template-columns: 0.8fr 1.5fr 1fr;
   background-color: #172039;
+}
+.header .links div:hover,
+.header .links div a:hover,
+.other-links span:hover {
+  background-color: #243158;
 }
 
 .header .logo {
@@ -60,6 +66,7 @@ body::-webkit-scrollbar {
   line-height: 21.6px;
   padding: 0px 20px 0px 20px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .links a.sale {
@@ -117,7 +124,7 @@ body::-webkit-scrollbar {
 
 .other-links {
   display: flex;
-  gap: 30px;
+  gap: 10px;
   margin-right: 30px;
 }
 
@@ -128,6 +135,8 @@ body::-webkit-scrollbar {
 .other-links span {
   display: flex;
   align-items: center;
+  padding: 15px;
+  height: 100%;
 }
 
 .container {
@@ -163,6 +172,12 @@ body::-webkit-scrollbar {
   border-radius: var(--Spacingxxs);
   border: 1px solid var(--Primary-Primary1000);
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.shoe-options:hover {
+  background-color: var(--Primary-Primary1000);
+  color: #fafafa;
 }
 
 .shoe-options-div .active {
@@ -271,6 +286,15 @@ body::-webkit-scrollbar {
   font-weight: 600;
   line-height: 21.6px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.addCart:hover {
+  width: 165px;
+  height: 67px;
+  font-size: 20px;
+  margin: 0 auto;
+  box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.1);
 }
 
 span.size {
@@ -320,10 +344,17 @@ span.size {
   font-weight: 400;
   line-height: 28.8px;
   background-color: transparent;
+  transition: 0.5s;
+}
+.prev:hover {
+  height: 44px;
+
+  color: var(--Base-Base_White);
+  background-color: var(--Primary-Primary1000);
+  box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.1);
 }
 
 .next {
-  width: 96px;
   height: 41px;
   padding: var(--Spacings) var(--Spacingsm);
   gap: 4px;
@@ -334,6 +365,14 @@ span.size {
   font-weight: 400;
   line-height: 28.8px;
   background-color: var(--Primary-Primary1000);
+}
+
+.next:hover {
+  height: 44px;
+  font-size: 25px;
+  background-color: transparent;
+  color: var(--Base-Base_Black);
+  box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.1);
 }
 
 .other-pages {
@@ -469,6 +508,11 @@ span.size {
   padding-bottom: 8px;
 }
 
+.footer-links-div div a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+
 .sign-up {
   display: flex;
   flex-direction: column;
@@ -588,7 +632,6 @@ span.size {
 
   .other-links {
     margin-right: 24px;
-    gap: 25px;
   }
 
   .other-links .search-icon {
@@ -706,6 +749,7 @@ span.size {
 
   .header .logo {
     margin: 15px 0 15px 24px;
+    cursor: pointer;
   }
   .header .logo img {
     width: 80px;
@@ -745,7 +789,6 @@ span.size {
 
   .other-links {
     margin-right: 10px;
-    gap: 18px;
   }
 
   .other-links img {

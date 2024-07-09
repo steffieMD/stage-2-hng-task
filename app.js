@@ -159,7 +159,3 @@ cartIcon.addEventListener("click", function () {
 homePage.addEventListener("click", function () {
   window.location = "/index.html";
 });
-
-headerEl.addEventListener("mouseover", function name(e) {
-  console.log(e.target);
-});

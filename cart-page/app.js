@@ -41,6 +41,9 @@ const addCartToHTML = function (carts) {
       let productPosition = listProducts.findIndex(
         (value) => value.id == cart.product_id
       );
+
+      totalBill += listProducts[productPosition].price;
+
       checkOutList.insertAdjacentHTML(
         "afterbegin",
         ` <div class="item" data-id="${listProducts[productPosition].id}">
@@ -85,6 +88,8 @@ const addCartToHTML = function (carts) {
               </div>`
       );
     });
+
+    document.querySelector(".subtotal").textContent = `$totalBill.toFixed(2)`;
   }
 };
 
@@ -111,6 +116,7 @@ const changeQuantity = function (product_id, type) {
   addCartToHTML(carts);
   storeCart(carts);
 };
+console.log(totalBill);
 
 const initApp = function () {
   fetch("/products.json")

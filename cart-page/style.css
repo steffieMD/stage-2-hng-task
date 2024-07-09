@@ -39,6 +39,7 @@ body::-webkit-scrollbar {
 
 .header .logo {
   margin: 24px 0 24px 64px;
+  cursor: pointer;
 }
 .header .logo {
   display: flex;
@@ -57,6 +58,13 @@ body::-webkit-scrollbar {
   gap: 10px;
 }
 
+.header .links div:hover {
+  background-color: #243158;
+}
+.other-links span:hover {
+  background-color: #243158;
+}
+
 .links a {
   font-size: 18px;
   color: #fafafa;
@@ -65,6 +73,7 @@ body::-webkit-scrollbar {
   line-height: 21.6px;
   padding: 0px 20px 0px 20px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .links a.sale {
@@ -122,7 +131,7 @@ body::-webkit-scrollbar {
 
 .other-links {
   display: flex;
-  gap: 30px;
+  gap: 10px;
   margin-right: 30px;
 }
 
@@ -133,6 +142,8 @@ body::-webkit-scrollbar {
 .other-links span {
   display: flex;
   align-items: center;
+  padding: 15px;
+  height: 100%;
 }
 
 /* Container */
@@ -359,12 +370,6 @@ h1 {
   cursor: pointer;
 }
 
-.summary button:hover,
-.addCart:hover,
-.email-bar button:hover {
-  opacity: 0.8;
-}
-
 .cart-icon {
   height: 100%;
 }
@@ -444,6 +449,15 @@ h1 {
   font-weight: 600;
   line-height: 21.6px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.addCart:hover {
+  width: 165px;
+  height: 67px;
+  font-size: 20px;
+  margin: 0 auto;
+  box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.1);
 }
 
 span.size {
@@ -570,6 +584,10 @@ span.size {
   padding-bottom: 8px;
 }
 
+.footer-links-div div a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
 .sign-up {
   display: flex;
   flex-direction: column;
