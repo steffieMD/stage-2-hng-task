@@ -392,9 +392,77 @@ h2 {
   opacity: 0.8;
 }
 
-/* MEDIA QUERIES */
-@media screen and (min-width: 2400px) {
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Primary-Primary900);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
+
+.policy-footer {
+  background-color: var(--Primary-Primary1000);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+}
+
+.policy-footer span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color: #fff;
+}
+
+.policy span {
+  padding-left: 10px;
+}
+
+.payment {
+  margin-top: 30px;
+  width: 35%;
+  margin: 30px auto 0 auto;
+}
+.payment .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.payment .title .horizontal-line {
+  width: 90%;
+  height: 1px;
+  border: 1px solid var(--Primary-Primary1000);
+  padding: 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+}
+
+.payment .title span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.8px;
+  color: #fff;
+  white-space: nowrap;
+  margin: 0 10px;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-icons img {
+  width: 50px;
+  height: 32px;
+}
+
+/* MEDIA QUERIES */
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
@@ -430,8 +498,134 @@ h2 {
   .homePage {
     width: 84.5px;
   }
+
   .title-div h1 {
     font-size: 32px;
+  }
+
+  .container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 span {
+    font-size: 16px;
+  }
+
+  .shipping-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+
+  .sign-in-div {
+    display: none;
+  }
+
+  .shipping-address-form {
+    padding-top: 0;
+  }
+
+  .form-input {
+    width: 100%;
+  }
+
+  .split-form {
+    width: 100%;
+  }
+
+  .shipping-div,
+  .shipping-div div {
+    width: 100%;
+  }
+
+  .shipping-div div {
+    grid-template-columns: 15px repeat(4, auto);
+    gap: 0;
+  }
+
+  .shipping-div span {
+    font-size: 12px;
+  }
+  .shipping-div .bold-text {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .chatbot {
+    display: none;
+  }
+
+  .summary {
+    width: 359px;
+    height: 304px;
+    padding: var(--Spacingm) 0 0 0;
+    border-radius: var(--Spacingxs);
+    border: 1px solid var(--Primary_Primary100);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .summary h3 {
+    font-size: 18px;
+    line-height: 21.6px;
+    padding: 0px 23px 0px 23px;
+  }
+
+  .summary .summary-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0px 23px 0px 23px;
+    gap: 24px;
+    margin: 39px 0;
+  }
+
+  .summary button {
+    margin-top: 0;
+    padding: 13px 78px 13px 78px;
+    width: 359px;
+    border-radius: var(--Spacingxs);
+    border: none;
+    font-weight: 600;
+  }
+
+  /* footer */
+
+  .main-footer {
+    padding: 0;
+    display: block;
+  }
+
+  .footer-info {
+    display: none;
+  }
+
+  .payment {
+    margin-top: 0;
+    width: 100%;
+  }
+  .policy-footer {
+    height: 55px;
+  }
+
+  .payment-icons:nth-child(3),
+  .payment-icons:nth-child(6),
+  .payment-icons:nth-child(7) {
+    display: none;
+  }
+
+  .payment-options {
+    justify-content: center;
+    gap: 6.4px;
+    padding-bottom: 10px;
+  }
+
+  .footer {
+    position: static;
   }
 }
 
@@ -490,5 +684,16 @@ h2 {
 
   .other-links img {
     width: 20px;
+  }
+
+  .payment {
+    width: 50%;
+    padding-bottom: 15px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 }

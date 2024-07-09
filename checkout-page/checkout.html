@@ -62,7 +62,7 @@
       <h1>
         <span class="active">Shipping</span>
         <span>&rarr;</span>
-        <span class="payment">Payment</span>
+        <span class="payment-header">Payment</span>
         <span>&rarr;</span>
         <span>Confirmation</span>
       </h1>
@@ -104,7 +104,7 @@
                 Address 2
                 <input type="text" name="" class="form-input" id="" />
               </label>
-              <div class="split form">
+              <div class="split-form">
                 <label>
                   State <span>*</span>
                   <input type="text" name="" class="form-input" id="" />
@@ -150,13 +150,13 @@
         <div class="shipping-div">
           <div>
             <input type="radio" value="free" name="shipping-cost" />
-            <span>Free</span>
+            <span class="bold-text">Free</span>
             <span>Regular Shipment</span>
             <span>5 - 12 business days</span>
           </div>
           <div>
             <input type="radio" name="shipping-cost" value="paid" />
-            <span>$10</span>
+            <span class="bold-text">$10</span>
             <span>Priority Shipment</span>
             <span>3 - 4 business days</span>
           </div>
@@ -165,6 +165,47 @@
 
       <div class="chatbot">?</div>
     </div>
+    <footer class="footer">
+      <div class="main-footer">
+        <div class="payment">
+          <div class="title">
+            <div class="horizontal-line"></div>
+            <span>Secure Payment</span>
+            <div class="horizontal-line"></div>
+          </div>
+          <div class="payment-options">
+            <div class="payment-icons">
+              <img src="/media/svg/MasterCard.svg" alt="" />
+            </div>
+            <div class="payment-icons">
+              <img src="/media/svg/Visa.svg" alt="" />
+            </div>
+            <div class="payment-icons">
+              <img src="/media/svg/American Express.svg" alt="" />
+            </div>
+            <div class="payment-icons">
+              <img src="/media/svg/ApplePay.svg" alt="" />
+            </div>
+            <div class="payment-icons">
+              <img src="/media/svg/Google Pay.svg" alt="" />
+            </div>
+            <div class="payment-icons">
+              <img src="/media/svg/Payoneer.svg" alt="" />
+            </div>
+            <div class="payment-icons">
+              <img src="/media/svg/PayPal.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="policy-footer">
+        <span>2024 apparel</span>
+        <div class="policy">
+          <span>Privacy policy</span>
+          <span>Refund policy</span>
+        </div>
+      </div>
+    </footer>
     <script src="/checkout-page/app.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 const cartIcon = document.querySelector(".cart-icon");
 const btnCheckOut = document.querySelector(".checkout-btn");
 const btnMen = document.querySelector(".men");
-const paymentHeader = document.querySelector(".payment");
+const paymentHeader = document.querySelector(".payment-header");
 const homePage = document.querySelector(".homePage");
 console.log(homePage);
 
