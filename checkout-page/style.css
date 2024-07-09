@@ -687,10 +687,4 @@ h2 {
     width: 50%;
     padding-bottom: 15px;
   }
-
-  .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
 }
