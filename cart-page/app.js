@@ -5,7 +5,6 @@ const cart = document.querySelector(".cart");
 const listProduct = document.querySelector(".listProduct");
 const btnCheckOut = document.querySelector(".checkout-btn");
 const homePage = document.querySelector(".homePage");
-console.log(homePage);
 
 let totalBill = 0;
 let listProducts = [];
@@ -35,6 +34,7 @@ const storeCart = function (carts) {
 };
 
 const addCartToHTML = function (carts) {
+  carts = JSON.parse(localStorage.getItem("cart"));
   checkOutList.innerHTML = "";
   if (carts.length > 0) {
     carts.forEach((cart) => {
@@ -43,7 +43,7 @@ const addCartToHTML = function (carts) {
       );
       checkOutList.insertAdjacentHTML(
         "afterbegin",
-        ` <div class="item">
+        ` <div class="item" data-id="${listProducts[productPosition].id}">
                 <div class="item-image">
                   <img src="/${
                     listProducts[productPosition].image
@@ -129,7 +129,6 @@ initApp();
 // Event Listeners
 cart.addEventListener("click", function (e) {
   const clicked = e.target;
-
   if (
     clicked.classList.contains("minus") ||
     clicked.classList.contains("plus")
@@ -139,7 +138,6 @@ cart.addEventListener("click", function (e) {
     if (clicked.classList.contains("plus")) {
       type = "plus";
     }
-    // 10.5
     changeQuantity(product_id, type);
   }
 });

@@ -953,6 +953,12 @@ span.size {
     width: 650px;
   }
 
+  .cart .item {
+    width: 650px;
+  }
+  .item-info-div {
+    gap: 80px;
+  }
   .edit-cart .change-quantity span {
     font-size: 18px;
   }
