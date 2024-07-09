@@ -469,21 +469,24 @@ span.size {
   justify-content: center;
 }
 
-.policy {
+.policy-footer {
   background-color: var(--Primary-Primary1000);
-  /* width: 1440px; */
   height: 70px;
-  padding-left: 64px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 20px 0 20px;
 }
 
-.policy span {
+.policy-footer span {
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
   color: #fff;
-  padding-right: 30px;
+}
+
+.policy span {
+  padding-left: 10px;
 }
 
 .payment {
@@ -852,8 +855,5 @@ span.size {
   .payment-icons img {
     width: 30px;
     height: 18px;
-  }
-  .policy span {
-    font-size: 10px;
   }
 }

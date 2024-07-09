@@ -127,6 +127,10 @@ body::-webkit-scrollbar {
 
 .container {
   padding: 20px 110px 0 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-div {
@@ -296,7 +300,6 @@ span.size {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  margin-bottom: 50px;
   align-items: center;
 }
 
@@ -339,6 +342,26 @@ span.size {
   color: var(--Base-Base_Black);
 }
 
+.loadMore-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 25px 0;
+}
+
+.btn-loadMore {
+  display: none;
+  width: 182px;
+  height: 49px;
+  padding: var(--Spacingsm) var(--Spacingl) var(--Spacingsm) var(--Spacingl);
+  border-radius: var(--Spacingxxs);
+  border: 1px solid var(--Primary-Primary1000);
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -351,24 +374,25 @@ span.size {
   flex-direction: column;
   justify-content: center;
 }
-
-.policy {
+.policy-footer {
   background-color: var(--Primary-Primary1000);
-  /* width: 1440px; */
   height: 70px;
-  padding-left: 64px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 20px 0 20px;
 }
 
-.policy span {
+.policy-footer span {
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
   color: #fff;
-  padding-right: 30px;
 }
 
+.policy span {
+  padding-left: 10px;
+}
 .payment {
   margin-top: 30px;
   width: 35%;
@@ -597,11 +621,49 @@ span.size {
   .show-sorted {
     font-size: 14px;
     font-weight: 400;
+    margin-top: 5px;
   }
 
   .productListSection .listProduct {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
+  }
+
+  .page-direction {
+    display: none;
+  }
+
+  .btn-loadMore {
+    display: block;
+  }
+
+  .main-footer {
+    padding: 0;
+    display: block;
+  }
+
+  .footer-info {
+    display: none;
+  }
+
+  .payment {
+    margin-top: 0;
+    width: 100%;
+  }
+  .policy-footer {
+    height: 55px;
+  }
+
+  .payment-icons:nth-child(3),
+  .payment-icons:nth-child(6),
+  .payment-icons:nth-child(7) {
+    display: none;
+  }
+
+  .payment-options {
+    justify-content: center;
+    gap: 6.4px;
+    padding-bottom: 10px;
   }
 }
 
