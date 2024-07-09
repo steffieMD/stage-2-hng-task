@@ -3,6 +3,8 @@
 // Elements
 const listProduct = document.querySelector(".listProduct");
 const cartIcon = document.querySelector(".cart-icon");
+const homePage = document.querySelector(".homePage");
+console.log(homePage);
 
 let productList = [];
 
@@ -81,10 +83,12 @@ listProduct.addEventListener("click", function (e) {
   if (!e.target.classList.contains("addCart")) return null;
   const product_id = e.target.closest(".item").dataset.id;
   addToCart(product_id);
-
-  //   window.location = "/cart-page/cart.html";
 });
 
 cartIcon.addEventListener("click", function () {
   window.location = "/cart-page/cart.html";
+});
+
+homePage.addEventListener("click", function () {
+  window.location = "/index.html";
 });
