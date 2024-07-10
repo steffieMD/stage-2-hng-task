@@ -762,8 +762,8 @@ span.size {
     padding: var(--Spacingm) var(--Spacingxxs) var(--Spacingm) var(--Spacingxxs);
     gap: 16.4px;
     border: 1px solid var(--Primary_Primary100);
-    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.3);
-    /* margin-bottom: 10px; */
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
   }
 
   .listProduct {
