@@ -200,6 +200,9 @@ const addCartToHTML = function (carts) {
     document.querySelector(".subtotal").textContent = `$${totalBill.toFixed(
       2
     )}`;
+    document.querySelector(".bill-total").textContent = `$${
+      Number(totalBill.toFixed(2)) + 10
+    }`;
   }
 };
 
