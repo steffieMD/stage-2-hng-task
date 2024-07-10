@@ -223,7 +223,6 @@ const changeQuantity = function (product_id, type) {
         break;
     }
   }
-  console.log(carts.length);
 
   if (carts.length < 1) window.location = "/index.html";
   addCartToHTML(carts);
