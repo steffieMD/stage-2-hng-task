@@ -5,6 +5,7 @@ const listProduct = document.querySelector(".listProduct");
 const cartIcon = document.querySelector(".cart-icon");
 const homePage = document.querySelector(".homePage");
 const headerEl = document.querySelector(".header");
+const productListSection = document.querySelector(".productListSection");
 
 let productList = [];
 
@@ -153,9 +154,17 @@ listProduct.addEventListener("click", function (e) {
 });
 
 cartIcon.addEventListener("click", function () {
-  window.location = "/cart-page/cart.html";
+  const carts = JSON.parse(localStorage.getItem("cart"));
+
+  if (carts.length < 1) window.location = "/index.html";
+  else window.location = "/cart-page/cart.html";
 });
 
 homePage.addEventListener("click", function () {
   window.location = "/index.html";
+});
+
+productListSection.addEventListener("click", function (e) {
+  if (!e.target.classList.contains("addCart")) return null;
+  window.location = "/cart-page/cart.html";
 });
