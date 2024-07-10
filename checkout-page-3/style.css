@@ -468,7 +468,7 @@ h2 span.active {
 
   .summary-list-div {
     width: 360px;
-    height: 188px;
+    height: 230px;
     padding: var(--Spacingm) var(--Spacings) var(--Spacingm) var(--Spacings);
     border-radius: var(--Spacingxs);
     display: flex;
@@ -484,7 +484,6 @@ h2 span.active {
     width: 302px;
     height: 114px;
     justify-content: space-between;
-    gap: 39px;
   }
 
   .summary-div button {
