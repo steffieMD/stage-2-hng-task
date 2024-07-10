@@ -341,7 +341,7 @@ label span {
   width: 68%;
   height: 33px;
   border-radius: var(--Spacingxxs);
-  border: 0.5px solid var(--Base-Base_Black);
+  border: 1px solid var(--Base-Base_Black);
   margin-top: 5px;
 }
 
@@ -514,7 +514,6 @@ h2 {
 
   .other-links {
     margin-right: 24px;
-    gap: 25px;
   }
 
   .other-links .search-icon {
