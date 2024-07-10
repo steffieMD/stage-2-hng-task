@@ -177,6 +177,10 @@ h1 span {
   line-height: 36px;
   letter-spacing: -0.03em;
   color: var(--Neutrals-Neutrals500);
+  cursor: pointer;
+}
+h1 span:hover {
+  color: #0a0a0b;
 }
 
 h1 span.active {
@@ -253,6 +257,11 @@ h1 span.active {
   letter-spacing: -0.03em;
   color: var(--Base-Base_White);
   white-space: nowrap;
+}
+
+.summary button:hover {
+  background-color: var(--Primary-Primary900);
+  box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.1);
 }
 
 .sign-in-div {
@@ -399,6 +408,12 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 0 0 30px auto;
+  transition: 0.5s;
+}
+
+.chatbot:hover {
+  width: 60px;
+  height: 60px;
 }
 
 .summary button:hover,

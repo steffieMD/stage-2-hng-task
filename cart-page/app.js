@@ -87,9 +87,10 @@ const addCartToHTML = function (carts) {
                 </div>
               </div>`
       );
+      document.querySelector(".subtotal").textContent = `$${totalBill.toFixed(
+        2
+      )}`;
     });
-
-    document.querySelector(".subtotal").textContent = `$totalBill.toFixed(2)`;
   }
 };
 

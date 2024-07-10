@@ -246,7 +246,6 @@ body::-webkit-scrollbar {
   gap: 10px;
   border-radius: 2px;
   border: 2px solid var(--Base-Base_Black);
-
   width: 500px;
   border-radius: 2px;
   background-color: transparent;
@@ -255,6 +254,14 @@ body::-webkit-scrollbar {
   line-height: 27px;
   letter-spacing: -0.03em;
   color: var(--Base-Base_Black);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.summary-div button:hover {
+  color: var(--Base-Base_White);
+  background-color: var(--Primary-Primary900);
+  box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -269,6 +276,11 @@ h2 span {
   line-height: 36px;
   letter-spacing: -0.03em;
   color: var(--Neutrals-Neutrals500);
+  cursor: pointer;
+  transition: 0.5s;
+}
+h2 span:hover {
+  color: #0a0a0b;
 }
 
 h2 span.active {
@@ -288,6 +300,12 @@ h2 span.active {
   justify-content: center;
   align-items: center;
   margin: 0 0 30px auto;
+  transition: 0.5s;
+}
+
+.chatbot:hover {
+  width: 60px;
+  height: 60px;
 }
 
 /* Footer */
@@ -602,9 +620,9 @@ h2 span.active {
     width: 460px;
   }
 
-  .footer {
+  /* .footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-  }
+  } */
 }
