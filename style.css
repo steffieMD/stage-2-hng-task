@@ -314,6 +314,7 @@ span.size {
   border-radius: 3px;
   border: 1px solid var(--Base-Base_Black);
   background-color: transparent;
+  color: #0a0a0b;
 }
 
 .price {
