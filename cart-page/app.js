@@ -196,10 +196,10 @@ const addCartToHTML = function (carts) {
                 </div>
               </div>`
       );
-      document.querySelector(".subtotal").textContent = `$${totalBill.toFixed(
-        2
-      )}`;
     });
+    document.querySelector(".subtotal").textContent = `$${totalBill.toFixed(
+      2
+    )}`;
   }
 };
 
@@ -219,11 +219,13 @@ const changeQuantity = function (product_id, type) {
           carts[positionInCart].quantity = valueChange;
         } else {
           carts.splice(positionInCart, 1);
-          window.location = "/index.html";
         }
         break;
     }
   }
+  console.log(carts.length);
+
+  if (carts.length < 1) window.location = "/index.html";
   addCartToHTML(carts);
   storeCart(carts);
 };
