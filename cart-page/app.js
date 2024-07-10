@@ -226,10 +226,6 @@ const changeQuantity = function (product_id, type) {
         break;
     }
   }
-
-  if (carts.length < 1) window.location = "/index.html";
-  addCartToHTML(carts);
-  storeCart(carts);
 };
 
 const initApp = function () {
@@ -261,6 +257,16 @@ cart.addEventListener("click", function (e) {
     }
     changeQuantity(product_id, type);
   }
+});
+
+listProduct.addEventListener("click", function (e) {
+  if (e.target.classList.contains("addCart")) return null;
+  window.location = "/product-page/index.html";
+});
+
+cart.addEventListener("click", function (e) {
+  if (!e.target.classList.contains("name")) return null;
+  window.location = "/product-page/index.html";
 });
 
 btnMen.addEventListener("click", function () {

@@ -154,7 +154,7 @@ listProduct.addEventListener("click", function (e) {
 });
 
 cartIcon.addEventListener("click", function () {
-  const carts = JSON.parse(localStorage.getItem("cart"));
+  const carts = JSON.parse(localStorage.getItem("cart")) || [];
 
   if (carts.length < 1) window.location = "/index.html";
   else window.location = "/cart-page/cart.html";
@@ -167,4 +167,9 @@ homePage.addEventListener("click", function () {
 productListSection.addEventListener("click", function (e) {
   if (!e.target.classList.contains("addCart")) return null;
   window.location = "/cart-page/cart.html";
+});
+
+productListSection.addEventListener("click", function (e) {
+  if (e.target.classList.contains("addCart")) return null;
+  window.location = "/product-page/index.html";
 });

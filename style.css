@@ -21,10 +21,6 @@
   box-sizing: border-box;
 }
 
-html::-webkit-scrollbar {
-  width: 0;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   color: var(--Base-Base_Black);
@@ -91,7 +87,7 @@ body::-webkit-scrollbar {
 
 .rest-nav {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
   cursor: pointer;
 }
@@ -129,8 +125,6 @@ body::-webkit-scrollbar {
 
 .other-links {
   display: flex;
-  gap: 10px;
-  margin-right: 30px;
 }
 
 .other-links .search-icon {
@@ -638,12 +632,11 @@ span.size {
   }
 
   .other-links {
-    margin-right: 24px;
+    margin-right: 10px;
   }
 
   .other-links .search-icon {
     display: block;
-    margin-top: 10px;
   }
 
   .homePage {

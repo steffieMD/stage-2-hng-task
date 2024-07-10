@@ -34,10 +34,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-body::-webkit-scrollbar {
-  width: 0;
-}
-
 /* nave */
 .header {
   display: grid;
