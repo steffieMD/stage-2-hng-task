@@ -24,6 +24,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: var(--Base-Base_Black);
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -404,6 +405,7 @@ span.size {
   font-size: 24px;
   font-weight: 600;
   line-height: 28.8px;
+  color: #0a0a0b;
 }
 
 .footer {
